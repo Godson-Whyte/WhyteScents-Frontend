@@ -1,0 +1,118 @@
+/* .offers{
+    width: 65%;
+    height: 60vh;
+    display: flex;
+    margin: auto;
+    padding: 0px 140px;
+    margin-bottom: 150px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+}
+.offers-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1{
+        color: #171717;
+        font-size: 80px;
+        font-weight: 600;
+    }
+    p{
+        color: #171717;
+        font-style: 22px;
+        font-weight: 600;
+    }
+    button{
+        width: 282px;
+        height: 70px;
+        border-radius: 35px;
+        background: #ff4141;
+        border: none;
+        color: white;
+        font-size: 22px;
+        font-weight: 500;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+}
+
+.offers-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 50px;
+} */
+
+.offers {
+    width: min(90%);
+    min-height: 60vh;
+    display: flex;
+    margin: 0 auto 9.375rem;
+    padding: 0 clamp(1rem, 8vw, 8.75rem);
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+  }
+  
+  .offers-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .offers-left h1 {
+    color: #171717;
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .offers-left p {
+    color: #171717;
+    font-size: clamp(1rem, 1.5vw, 1.375rem);
+    font-weight: 600;
+    margin-bottom: 1.875rem;
+  }
+  
+  .offers-left button {
+    width: clamp(200px, 20vw, 282px);
+    height: clamp(50px, 5vw, 70px);
+    border-radius: 35px;
+    background: #ff4141;
+    border: none;
+    color: white;
+    font-size: clamp(1rem, 1.5vw, 1.375rem);
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .offers-left button:hover {
+    background-color: #e63636;
+  }
+  
+  .offers-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: clamp(1.5rem, 3vw, 3.125rem);
+  }
+  
+  @media (max-width: 768px) {
+    .offers {
+      flex-direction: column;
+      width: 90%;
+      padding: 2rem 1rem;
+    }
+  
+    .offers-left, .offers-right {
+      align-items: center;
+      text-align: center;
+    }
+  
+    .offers-right {
+      justify-content: center;
+      padding-top: 2rem;
+    }
+  }
